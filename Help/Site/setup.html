@@ -1,0 +1,179 @@
+﻿<!-- setup.html
+//   ==========
+//   Ogle Help
+//   Copyright ©2017 Jeremy Kelly
+//   www.anthemion.org -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jeremy Kelly">
+	<meta name="description" content="Ogle Help: Setup">
+	<meta name="keywords" content="Ogle,word game,help">
+
+  <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="main.css">
+
+	<title>Ogle Help: Setup</title>
+</head>
+
+<body>
+	<div id="Cont">
+		<div class="Menu">
+			<a href="index.html">Main</a>
+			<div class="Curr">Setup</div>
+			<a href="play.html">Play</a>
+			<a href="score.html">Score</a>
+		</div>
+			
+		<div id="Banner">
+			<img src="image/banner.png" width="97" height="97" alt="Ogle banner">
+		</div>
+			
+		<h1>Setup</h1>
+			
+		<div class="MenuSub">
+			<a href="#yield">Yield</a>
+			<a href="#pace">Pace</a>
+			<a href="#other_controls">Other controls</a>
+		</div>
+			
+		<p>
+			The <strong>Setup</strong> dialog appears when you start Ogle:
+		</p>
+			
+		<p class="Screen">
+			<img src="image/setup.png" width="240" height="390" alt="Setup dialog screen shot">
+		</p>
+			
+		<h2 id="yield">Yield</h2>
+			
+		<p>
+			The <strong>Yield</strong> slider sets the number of words to be hidden in the letter grid. Adding more words produces longer and easier games:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Yield</td>
+					<td>Word count</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Sparse</td>
+					<td>Up to 50</td>
+				</tr>
+				<tr>
+					<td>Adequate</td>
+					<td>50 to 100</td>
+				</tr>
+				<tr>
+					<td>Full</td>
+					<td>100 or more</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<h2 id="pace">Pace</h2>
+		
+		<p>
+			The <strong>Pace</strong> slider determines how much time you will have. Each game starts with a small amount of time on the clock. As valid words are entered, <dfn>time bonuses</dfn> are awarded:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Pace</td>
+					<td>Start time</td>
+					<td>Bonus length</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Plodding</td>
+					<td>48 seconds</td>
+					<td>8 seconds</td>
+				</tr>
+				<tr>
+					<td>Slow</td>
+					<td>36 seconds</td>
+					<td>6 seconds</td>
+				</tr>
+				<tr>
+					<td>Unhurried</td>
+					<td>30 seconds</td>
+					<td>5 seconds</td>
+				</tr>
+				<tr>
+					<td>Measured</td>
+					<td>24 seconds</td>
+					<td>4 seconds</td>
+				</tr>
+				<tr>
+					<td>Brisk</td>
+					<td>18 seconds</td>
+					<td>3 seconds</td>
+				</tr>
+				<tr>
+					<td>Fast</td>
+					<td>12 seconds</td>
+					<td>2 seconds</td>
+				</tr>
+				<tr>
+					<td>Dizzying</td>
+					<td>6 seconds</td>
+					<td>1 seconds</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<p>
+			For every letter <em>over three</em> in a valid word, one bonus is added. At the <em>unhurried</em> pace, a six-letter word adds fifteen seconds:
+		</p>
+			
+		<p class="Example">
+			(6 letters - 3) × 5 seconds = 15 seconds
+		</p>
+			
+		<p>
+			At the <em>dizzying</em> pace, a four-letter word adds one second:
+		</p>
+			
+		<p class="Example">
+			(4 letters - 3) × 1 seconds = 1 second
+		</p>
+			
+		<p>
+			<a href="follow.html">Followed words</a> don't add time bonuses, so there is no need to enter them.
+		</p>
+			
+		<h2 id="other_controls">Other controls</h2>
+		
+		<ul>
+			<li>
+				The <strong>About</strong> button opens the Ogle <strong>About</strong> dialog;
+			</li>
+			<li>
+				The <strong>Help</strong> button displays these help pages in your browser;
+			</li>
+			<li>
+				The <strong>Advanced</strong> button shows the <a href="setup_adv.html">Advanced Setup</a> dialog;
+			</li>
+			<li>
+				The <strong>Play</strong> button loads the <a href="play.html">Play</a> dialog and starts the game.
+			</li>
+		</ul>
+
+		<div class="Menu">
+			<a href="index.html">Main</a>
+			<div class="Curr">Setup</div>
+			<a href="play.html">Play</a>
+			<a href="score.html">Score</a>
+		</div>
+	</div>
+</body>
+</html>

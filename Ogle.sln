@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ogle", "Ogle\Ogle.csproj", "{077ECE95-1B21-4136-BEC3-679F3B90E866}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F085473F-0CD3-4F6B-979C-301B70D00762} = {F085473F-0CD3-4F6B-979C-301B70D00762}
+		{33FA5894-5D9B-495F-A24E-B17A9E713A5C} = {33FA5894-5D9B-495F-A24E-B17A9E713A5C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Line", "Line\Line.csproj", "{33FA5894-5D9B-495F-A24E-B17A9E713A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtnTime", "BtnTime\BtnTime.csproj", "{F085473F-0CD3-4F6B-979C-301B70D00762}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{077ECE95-1B21-4136-BEC3-679F3B90E866}.Debug|x86.ActiveCfg = Debug|x86
+		{077ECE95-1B21-4136-BEC3-679F3B90E866}.Debug|x86.Build.0 = Debug|x86
+		{077ECE95-1B21-4136-BEC3-679F3B90E866}.Release|x86.ActiveCfg = Release|x86
+		{077ECE95-1B21-4136-BEC3-679F3B90E866}.Release|x86.Build.0 = Release|x86
+		{33FA5894-5D9B-495F-A24E-B17A9E713A5C}.Debug|x86.ActiveCfg = Debug|x86
+		{33FA5894-5D9B-495F-A24E-B17A9E713A5C}.Debug|x86.Build.0 = Debug|x86
+		{33FA5894-5D9B-495F-A24E-B17A9E713A5C}.Release|x86.ActiveCfg = Release|x86
+		{33FA5894-5D9B-495F-A24E-B17A9E713A5C}.Release|x86.Build.0 = Release|x86
+		{F085473F-0CD3-4F6B-979C-301B70D00762}.Debug|x86.ActiveCfg = Debug|x86
+		{F085473F-0CD3-4F6B-979C-301B70D00762}.Debug|x86.Build.0 = Debug|x86
+		{F085473F-0CD3-4F6B-979C-301B70D00762}.Release|x86.ActiveCfg = Release|x86
+		{F085473F-0CD3-4F6B-979C-301B70D00762}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

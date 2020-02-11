@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="eqBtnOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="eqBtnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 351</value>
+  </data>
+  <data name="eqBtnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="eqBtnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eqBtnOK.Text" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="&gt;&gt;eqBtnOK.Name" xml:space="preserve">
+    <value>eqBtnOK</value>
+  </data>
+  <data name="&gt;&gt;eqBtnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqBtnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eqBtnOK.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="eqLblLegScoreComp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblLegScoreComp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 241</value>
+  </data>
+  <data name="eqLblLegScoreComp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 18</value>
+  </data>
+  <data name="eqLblLegScoreComp.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="eqLblLegScoreComp.Text" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="eqLblLegScoreComp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScoreComp.Name" xml:space="preserve">
+    <value>eqLblLegScoreComp</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScoreComp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScoreComp.Parent" xml:space="preserve">
+    <value>eqBoxComp</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScoreComp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="eqLblComp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblComp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 205</value>
+  </data>
+  <data name="eqLblComp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 18</value>
+  </data>
+  <data name="eqLblComp.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="eqLblComp.Text" xml:space="preserve">
+    <value>Ogle</value>
+  </data>
+  <data name="eqLblComp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblComp.Name" xml:space="preserve">
+    <value>eqLblComp</value>
+  </data>
+  <data name="&gt;&gt;eqLblComp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblComp.Parent" xml:space="preserve">
+    <value>eqBoxComp</value>
+  </data>
+  <data name="&gt;&gt;eqLblComp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="eqLblScoreComp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 25px, style=Bold</value>
+  </data>
+  <data name="eqLblScoreComp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblScoreComp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 215</value>
+  </data>
+  <data name="eqLblScoreComp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 30</value>
+  </data>
+  <data name="eqLblScoreComp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eqLblScoreComp.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="eqLblScoreComp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblScoreComp.Name" xml:space="preserve">
+    <value>eqLblScoreComp</value>
+  </data>
+  <data name="&gt;&gt;eqLblScoreComp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblScoreComp.Parent" xml:space="preserve">
+    <value>eqBoxComp</value>
+  </data>
+  <data name="&gt;&gt;eqLblScoreComp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="eqBoxComp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 77</value>
+  </data>
+  <data name="eqBoxComp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 268</value>
+  </data>
+  <data name="eqBoxComp.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;eqBoxComp.Name" xml:space="preserve">
+    <value>eqBoxComp</value>
+  </data>
+  <data name="&gt;&gt;eqBoxComp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqBoxComp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eqBoxComp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="eqLblLegScorePlay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblLegScorePlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 52</value>
+  </data>
+  <data name="eqLblLegScorePlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 18</value>
+  </data>
+  <data name="eqLblLegScorePlay.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="eqLblLegScorePlay.Text" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="eqLblLegScorePlay.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScorePlay.Name" xml:space="preserve">
+    <value>eqLblLegScorePlay</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScorePlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScorePlay.Parent" xml:space="preserve">
+    <value>eqBoxPlay</value>
+  </data>
+  <data name="&gt;&gt;eqLblLegScorePlay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="eqLblPlay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblPlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="eqLblPlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 18</value>
+  </data>
+  <data name="eqLblPlay.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="eqLblPlay.Text" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="eqLblPlay.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblPlay.Name" xml:space="preserve">
+    <value>eqLblPlay</value>
+  </data>
+  <data name="&gt;&gt;eqLblPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblPlay.Parent" xml:space="preserve">
+    <value>eqBoxPlay</value>
+  </data>
+  <data name="&gt;&gt;eqLblPlay.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="eqLblScorePlay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 25px, style=Bold</value>
+  </data>
+  <data name="eqLblScorePlay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblScorePlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 26</value>
+  </data>
+  <data name="eqLblScorePlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 30</value>
+  </data>
+  <data name="eqLblScorePlay.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eqLblScorePlay.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="eqLblScorePlay.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblScorePlay.Name" xml:space="preserve">
+    <value>eqLblScorePlay</value>
+  </data>
+  <data name="&gt;&gt;eqLblScorePlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblScorePlay.Parent" xml:space="preserve">
+    <value>eqBoxPlay</value>
+  </data>
+  <data name="&gt;&gt;eqLblScorePlay.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="eqBoxPlay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 75</value>
+  </data>
+  <data name="eqBoxPlay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 307</value>
+  </data>
+  <data name="eqBoxPlay.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;eqBoxPlay.Name" xml:space="preserve">
+    <value>eqBoxPlay</value>
+  </data>
+  <data name="&gt;&gt;eqBoxPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqBoxPlay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eqBoxPlay.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13px</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 11</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 51</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Click for
+Wiktionary
+entry</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="eqBtnSel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 30px, style=Bold</value>
+  </data>
+  <data name="eqBtnSel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="eqBtnSel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="eqBtnSel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqBtnSel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 16</value>
+  </data>
+  <data name="eqBtnSel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 43</value>
+  </data>
+  <data name="eqBtnSel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eqBtnSel.Text" xml:space="preserve">
+    <value>perspicacious</value>
+  </data>
+  <data name="eqBtnSel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;eqBtnSel.Name" xml:space="preserve">
+    <value>eqBtnSel</value>
+  </data>
+  <data name="&gt;&gt;eqBtnSel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqBtnSel.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;eqBtnSel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 7</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 68</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 41</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Letters</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="eqLblLen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 25px, style=Bold</value>
+  </data>
+  <data name="eqLblLen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eqLblLen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 14</value>
+  </data>
+  <data name="eqLblLen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 30</value>
+  </data>
+  <data name="eqLblLen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eqLblLen.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="eqLblLen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;eqLblLen.Name" xml:space="preserve">
+    <value>eqLblLen</value>
+  </data>
+  <data name="&gt;&gt;eqLblLen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eqLblLen.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;eqLblLen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 7</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 68</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="eqGrid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 40px, style=Bold</value>
+  </data>
+  <data name="eqGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 83</value>
+  </data>
+  <data name="eqGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 298</value>
+  </data>
+  <data name="eqGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="eqGrid.Text" xml:space="preserve">
+    <value>ogleGrid1</value>
+  </data>
+  <data name="&gt;&gt;eqGrid.Name" xml:space="preserve">
+    <value>eqGrid</value>
+  </data>
+  <data name="&gt;&gt;eqGrid.Type" xml:space="preserve">
+    <value>nOgle.tqGrid, Ogle, Version=0.2.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;eqGrid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eqGrid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>480, 396</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13px</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ogle word detail</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>tqFrmDtl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>nOgle.tqFrmOgle, Ogle, Version=0.2.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

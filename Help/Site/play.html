@@ -1,0 +1,119 @@
+﻿<!-- play.html
+//   =========
+//   Ogle Help
+//   Copyright ©2017 Jeremy Kelly
+//   www.anthemion.org -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jeremy Kelly">
+	<meta name="description" content="Ogle Help: Play">
+	<meta name="keywords" content="Ogle,word game,help">
+
+  <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="main.css">
+
+	<title>Ogle Help: Play</title>
+</head>
+
+<body>
+	<div id="Cont">
+		<div class="Menu">
+			<a href="index.html">Main</a>
+			<a href="setup.html">Setup</a>
+			<div class="Curr">Play</div>
+			<a href="score.html">Score</a>
+		</div>
+			
+		<div id="Banner">
+			<img src="image/banner.png" width="97" height="97" alt="Ogle banner">
+		</div>
+			
+		<h1>Play</h1>
+			
+		<div class="MenuSub">
+			<a href="#entry">Entry</a>
+			<a href="#verification">Verification</a>
+			<a href="#scoring">Scoring</a>
+			<a href="#pause">Pause</a>
+			<a href="#quit">Quit</a>
+		</div>
+			
+		<p>
+			The game starts when the <strong>Play</strong> dialog appears:
+		</p>
+			
+		<p class="Screen">
+			<img src="image/play.png" width="350" height="378" alt="Play dialog screen shot">
+		</p>
+			
+		<p>
+			Your goal is to enter as many words as you can before time runs out. Words must be <em>four or more letters</em> long. Each valid word scores a point and adds a small amount of time to the clock. Longer words add more time.
+		</p>
+			
+		<h2 id="entry">Entry</h2>
+			
+		<p>
+			Words are constructed by selecting letters in the grid:
+		</p>
+
+		<ul>
+			<li>
+				<em>Left-click a letter</em> to add it to your word. Each letter must be horizontally, vertically, or diagonally adjacent to the one before it. Within the grid, a given letter can be selected only once;
+			</li>
+			<li>
+				<em>Left-click a selected letter</em> to unselect it, along with all the selected letters that follow it;
+			</li>
+			<li>
+				<em>Middle-click</em> anywhere within the grid to clear the entire word;
+			</li>
+			<li>
+				<em>Right-click</em> within the grid to add the word to your scorecard.
+			</li>
+		</ul>
+			
+		<p>
+			Words must contain at least <em>four letters</em>. Some grid elements, like <em>Qu</em>, contain more than one letter, so valid words like <em>quit</em> can be selected with as few as three clicks.
+		</p>
+			
+		<h2 id="verification">Verification</h2>
+			
+		<p>
+			After a word is entered, if it is recognized by Ogle, it is immediately scored. If not, the game pauses, and the <a href="ver.html">Word verification</a> dialog appears. If you choose to <em>add</em> the word, it will be scored, otherwise it will be discarded.
+		</p>
+			
+		<h2 id="scoring">Scoring</h2>
+			
+		<p>
+			Unique, <a href="valid.html">valid</a> words that have not been <a href="follow.html">followed</a> score one point each. They also add one <a href="setup.html#pace">time bonus</a> to the clock for each letter over three.
+		</p>
+			
+		<h2 id="pause">Pause</h2>
+			
+		<p>
+			Clicking the <strong>Pause</strong> button on the right hides all letters and pauses the game. The game pauses automatically when the <strong>Play</strong> dialog loses focus.
+		</p>
+			
+		<p>
+			To resume play, click the <strong>Pause</strong> button, or click anywhere inside the grid.
+		</p>
+			
+		<h2 id="quit">Quit</h2>
+			
+		<p>
+			To quit the game before time expires, click the Windows <strong>Close</strong> button in the title bar, and select <strong>End Round</strong> or <strong>Quit Ogle</strong>.
+		</p>
+			
+		<div class="Menu">
+			<a href="index.html">Main</a>
+			<a href="setup.html">Setup</a>
+			<div class="Curr">Play</div>
+			<a href="score.html">Score</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site", "Site", "{F64DB4B0-9F84-4CC2-A1F2-FDFEEB8EBE77}"
+	ProjectSection(SolutionItems) = preProject
+		..\Site\detail.html = ..\Site\detail.html
+		..\Site\follow.html = ..\Site\follow.html
+		..\Site\index.html = ..\Site\index.html
+		..\Site\main.css = ..\Site\main.css
+		..\Site\play.html = ..\Site\play.html
+		..\Site\score.html = ..\Site\score.html
+		..\Site\setup.html = ..\Site\setup.html
+		..\Site\setup_adv.html = ..\Site\setup_adv.html
+		..\Site\valid.html = ..\Site\valid.html
+		..\Site\ver.html = ..\Site\ver.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

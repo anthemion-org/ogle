@@ -1,0 +1,214 @@
+﻿<!-- follow.html
+//   ===========
+//   Ogle Help
+//   Copyright ©2017 Jeremy Kelly
+//   www.anthemion.org -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jeremy Kelly">
+	<meta name="description" content="Ogle Help: Followed words">
+	<meta name="keywords" content="Ogle,word game,help">
+
+  <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="main.css">
+
+	<title>Ogle Help: Followed words</title>
+</head>
+
+<body>
+	<div id="Cont">
+		<div class="Menu">
+			<a href="index.html">Main</a>
+			<a href="setup.html">Setup</a>
+			<a href="play.html">Play</a>
+			<a href="score.html">Score</a>
+		</div>
+			
+		<div id="Banner">
+			<img src="image/banner.png" width="97" height="97" alt="Ogle banner">
+		</div>
+			
+		<h1>Followed words</h1>
+			
+		<p>
+			A <dfn>followed word</dfn> is a <em>shorter</em> word entry that can be transformed into another, <em>longer</em> entry by adding letters to its end.
+		</p>			
+		<p>
+			Word entries that are <em>not</em> followed score one point, and add time bonuses equal to their length minus three. The length of each time bonus is determined by the <a href="setup.html#pace">Pace slider</a> on the Setup dialog.
+		</p>			
+		<p>
+			In this example, the word <em>fine</em> has been entered:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Entry</td>
+					<td>Points</td>
+					<td>Time bonuses</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fine</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<p>
+			If <em>finest</em> is entered next, <em>fine</em> becomes a followed word, since it can be changed to <em>finest</em> by adding <em>st</em>. The first entry is invalidated, and one point is awarded for the second, along with three time bonuses:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Entry</td>
+					<td>Points</td>
+					<td>Time bonuses</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fine</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>finest</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<p>
+			If <em>fines</em> is entered, it is immediately invalidated, and no point is scored. Though it follows <em>fine</em>, it is itself already followed by <em>finest</em>:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Entry</td>
+					<td>Points</td>
+					<td>Time bonuses</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fine</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>finest</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>fines</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table>
+						
+		<p>
+			For an entry to be followed, it must be possible to transform it to another entry by <em>adding</em> letters; simply sharing a root is not enough. Thus, entering <em>finer</em> scores a point without invalidating anything, though it would have invalidated <em>fine</em> if that word had not already been followed:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Entry</td>
+					<td>Points</td>
+					<td>Time bonuses</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fine</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>finest</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>fines</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>finer</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<p>
+			A word is followed only when letters are added to its <em>end</em>, so entering <em>refiner</em> scores a point without invalidating <em>finer</em>:
+		</p>
+			
+		<table>
+			<thead>
+				<tr>
+					<td>Entry</td>
+					<td>Points</td>
+					<td>Time bonuses</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>fine</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>finest</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>fines</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>finer</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>refiner</td>
+					<td>1</td>
+					<td>4</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<p>
+			Finally, only <em>player</em>-entered words cause other words to be followed. If <em>finery</em> is spelled within the grid, and if the player fails to find it, <em>finer</em> will remain valid, even though Ogle finds and scores <em>finery</em> itself.
+		</p>
+		<p>
+			These rules becomes intuitive with practice. Followed words are ignored so you don't have to enter the same string repeatedly when longer words (especially plurals) are encountered. When you find a group of related words, just enter the longest one, and you'll get as many points and as much bonus time as is possible.
+		</p>
+			
+		<div class="Menu">
+			<a href="index.html">Main</a>
+			<a href="setup.html">Setup</a>
+			<a href="play.html">Play</a>
+			<a href="score.html">Score</a>
+		</div>
+	</div>
+</body>
+</html>
