@@ -25,6 +25,8 @@ The Ogle solution contains three projects:
 
 Several other controls are implemented within the `Ctls` folder in the Ogle project; these are too specialized to be used outside Ogle, so they do not have their own projects.
 
+All developer-generated code uses [Split Notation](https://www.anthemion.org/split_notation.html).
+
 
 ## Image resources
 

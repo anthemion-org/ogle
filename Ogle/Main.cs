@@ -278,29 +278,34 @@ namespace nOgle {
 		}
 		
 		/// <summary>
-		/// Plays a long series of games using the current settings without input
-		/// from the player; then displays statistics describing the productivity
-		/// of the boards. Used to evaluate the board generation process.
+		/// Plays a long series of games using the current settings (without input
+		/// from the player), then displays statistics describing the productivity
+		/// of the boards, plus the search time.
 		/// </summary>
 		static void esTestProd(tqLex aqLex) {
-			const Int32 oCt = 500;
-			Int32 oMin = 99999;
-			Int32 oMax = 0;
-			Int32 oTtl = 0;
+			const Int32 oCt = 100;
+			Int32 oWordsMin = 99999;
+			Int32 oWordsMax = 0;
+			Int32 oWordsTtl = 0;
+			long oTimeTtl = 0;
 			for (Int32 o = 0; o < oCt; ++o) {
 				var oqRound = new tqRound(1.0F);
 				var oqMgrSearch = new tqMgrSearch(oqRound.qBoard, aqLex, sErudComp);
 				
 				oqMgrSearch.Exec();
-				while (!oqMgrSearch.Compl) Thread.Sleep(200);
+				while (!oqMgrSearch.CkDone) Thread.Sleep(200);
 				
-				if (oqMgrSearch.CtRaw() < oMin) oMin = oqMgrSearch.CtRaw();
-				if (oqMgrSearch.CtRaw() > oMax) oMax = oqMgrSearch.CtRaw();
-				oTtl += oqMgrSearch.CtRaw();
+				if (oqMgrSearch.CtRaw() < oWordsMin) oWordsMin = oqMgrSearch.CtRaw();
+				if (oqMgrSearch.CtRaw() > oWordsMax) oWordsMax = oqMgrSearch.CtRaw();
+				oWordsTtl += oqMgrSearch.CtRaw();
+
+				oTimeTtl += oqMgrSearch.Time;
 			}
-			float oAvg = (float)oTtl / oCt;
-			string oqText = string.Format("Min: {0}\nMax: {1}\nAvg: {2}", oMin,
-				oMax, oAvg);
+			float oWordsAvg = (float)oWordsTtl / oCt;
+			float oTimeAvg = (float)oTimeTtl / oCt;
+			string oqText = string.Format(
+				"Words min: {0}\nWords max: {1}\nWords avg: {2}\nTime avg: {3}",
+				oWordsMin, oWordsMax, oWordsAvg, oTimeAvg);
 			MessageBox.Show(oqText);
 		}
 		
@@ -369,7 +374,7 @@ namespace nOgle {
 					oqRound = new tqRound(sSetup.CeilPool());
 					oqMgrSearch = new tqMgrSearch(oqRound.qBoard, oqLex, sErudComp);
 					oqMgrSearch.Exec();
-					while (!oqMgrSearch.Compl) Thread.Sleep(200);
+					while (!oqMgrSearch.CkDone) Thread.Sleep(200);
 					
 					// The redundancy check is relatively slow, so it makes sense to
 					// skip boards that are unlikely to fit the constraints.

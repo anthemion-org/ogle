@@ -23,6 +23,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Threading;
@@ -79,7 +80,12 @@ namespace nOgle {
 		/// <summary>
 		/// Returns 'true' when the work thread is complete.
 		/// </summary>
-		public bool Compl { get; private set; }
+		public bool CkDone { get; private set; }
+		/// <summary>
+		/// Returns the total search time, in milliseconds, or zero if the search is
+		/// still running.
+		/// </summary>
+		public long Time { get; private set; } = 0;
 		
 		/// <summary>
 		/// Creates an instance to search aqBoard for words in aqLex with the
@@ -92,7 +98,7 @@ namespace nOgle {
 			eqBoard = aqBoard;
 			eqLex = aqLex;
 			eErud = aErud;
-			Compl = false;
+			CkDone = false;
 		}
 		
 		/// <summary>
@@ -125,6 +131,8 @@ namespace nOgle {
 		void eExec() {
 			try {
 				lock (eqLock) {
+					var oWatch = new Stopwatch();
+					oWatch.Start();
 					foreach (Point oSq in tqMain.sSqsGrid()) {
 						if (eReqStop) return;
 						
@@ -138,7 +146,10 @@ namespace nOgle {
 						oLook.Exec(true);
 						eExec(oqEnum, oLook);
 					}
-					Compl = true;
+					oWatch.Stop();
+					Time = oWatch.ElapsedMilliseconds;
+
+					CkDone = true;
 				}
 			}
 			catch (Exception aq) {
