@@ -23,6 +23,8 @@ The Ogle solution contains three projects:
 
 * `Ogle`: The main Ogle application.
 
+The Ogle project references the `Release` versions of `BtnTime` and `Line`, so you should build that target _before_ `Debug`.
+
 Several other controls are implemented within the `Ctls` folder in the Ogle project; these are too specialized to be used outside Ogle, so they do not have their own projects.
 
 All developer-generated code uses [Split Notation](https://www.anthemion.org/split_notation.html).
