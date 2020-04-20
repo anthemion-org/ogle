@@ -13,7 +13,7 @@ To learn more about the game, have a look at the Ogle [help pages](https://www.a
 
 ## Ogle solution
 
-Ogle was originally created with early versions of C# and NET. I have updated the solution to use Visual Studio 2019 and .NET Framework 4.5, but the code hasn't changed much since 2006.
+Ogle was created with early versions of C# and NET. I have updated the solution to use Visual Studio 2019 and .NET Framework 4.5, but the code hasn't changed much since 2006.
 
 The Ogle solution contains three projects:
 
