@@ -6,14 +6,14 @@ Ogle is a free, open source word-finding game for Windows:
 
 ![Ogle screenshots](screens_ogle.png)
 
-I created this app when I was first learning C#. Ogle derives from a tabletop game you've probably played, but the pace is _much_ faster. This version uses Windows Forms, but I'm planning to make a fancier version with WPF when I get some time.
+I created this app when I was first learning C#. Ogle derives from a tabletop game you've probably played, but the pace is _much_ faster. I am working on a web version right now; check back later for that.
 
 To learn more about the game, have a look at the Ogle [help pages](https://www.anthemion.org/ogle_help/index.html).
 
 
 ## Ogle solution
 
-Ogle was originally created with C# 3.0, .NET Framework 3.5, and Visual Studio 2008. I have updated the solution to use Visual Studio 2019 and .NET Framework 4.5, but the code hasn't changed much since 2006.
+Ogle was originally created with C# 3.0, .NET Framework 3.5, and Visual Studio 2005. I have updated the solution to use Visual Studio 2019 and .NET Framework 4.5, but the code hasn't changed much since 2006.
 
 The Ogle solution contains three projects:
 
@@ -22,6 +22,8 @@ The Ogle solution contains three projects:
 * `Line`: Implements the 'line' control used in several places on the Score form.
 
 * `Ogle`: The main Ogle application.
+
+The Ogle project references the `Release` versions of `BtnTime` and `Line`, so you should build that target _before_ `Debug`.
 
 Several other controls are implemented within the `Ctls` folder in the Ogle project; these are too specialized to be used outside Ogle, so they do not have their own projects.
 

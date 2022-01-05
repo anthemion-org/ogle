@@ -1,6 +1,6 @@
 // Scores.cs
 // ---------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -25,7 +25,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml;
-using System.Windows.Forms;
 using nMisc;
 
 namespace nOgle {

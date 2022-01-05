@@ -1,6 +1,6 @@
 // FrmCtr.cs
 // ---------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -20,14 +20,9 @@
 // with Ogle. If not, see <http://www.gnu.org/licenses/>.
 // -----------------
 
-using System;
 using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
-using System.IO;
-using System.Diagnostics;
-using System.Reflection;
-using nMisc;
 
 namespace nOgle {
 	/// <summary>

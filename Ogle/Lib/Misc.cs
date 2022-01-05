@@ -1,6 +1,6 @@
 // Misc.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -21,9 +21,6 @@
 // -----------------
 
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
 
 namespace nMisc {
 	/// <summary>
@@ -35,10 +32,9 @@ namespace nMisc {
 		/// if the variable is null.
 		/// </summary>
 		//
-		// This technique adapted from Jon Skeet's answer to:
+		// This technique adapted from:
 		//
-		//   http://stackoverflow.com/questions/665454/c-should-i-bother-checking
-		//     -for-null-in-this-situation:
+		//   http://stackoverflow.com/questions/665454/c-should-i-bother-checking-for-null-in-this-situation:
 		//
 		public static void sThrowNull<xq>(this xq aq, string aqName)
 			where xq: class {

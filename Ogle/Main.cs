@@ -1,6 +1,6 @@
 // Main.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -27,7 +27,6 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
-using System.IO;
 using System.Xml;
 using System.Threading;
 using nMisc;
@@ -62,7 +61,8 @@ namespace nOgle {
 		public static readonly Int32 sLenEntMin = 4;
 		
 		/// <summary>
-		/// The computer's erudition.
+		/// The computer's erudition. This was meant to filter words by frequency of 
+		/// usage, but that is no longer configurable.
 		/// </summary>
 		public static readonly Int32 sErudComp = 2;
 		
@@ -103,7 +103,7 @@ namespace nOgle {
 			get { return new Rectangle(0, 0, sWthGrid, sHgtGrid); }
 		}
 		/// <summary>
-		/// The number of of elements in the letter grid.
+		/// The number of elements in the letter grid.
 		/// </summary>
 		public static Int32 sCtDie {
 			get {
@@ -201,9 +201,12 @@ namespace nOgle {
 		/// <summary>
 		/// Returns the signature of the topmost method in the specified stack
 		/// that is not one of the throw methods, like <see cref="tMisc
-		/// .sThrowNull"/>. Decreasing the amount of text in the exception report
-		/// increases the likelihood that the text will be reported.
+		/// .sThrowNull"/>.
 		/// </summary>
+		/// <remarks>
+		/// Decreasing the amount of text in the exception report increases the 
+		/// likelihood that the text will be reported.
+		/// </remarks>
 		static string eMethLast(string aqTrace) {
 			if (aqTrace == null) return "";
 			
@@ -309,6 +312,10 @@ namespace nOgle {
 			MessageBox.Show(oqText);
 		}
 		
+		/// <summary>
+		/// The form management loop, which cycles the player through the Setup,
+		/// Play, and Score forms.
+		/// </summary>
 		static void esExec() {
 			Rectangle oDesk = Screen.PrimaryScreen.WorkingArea;
 			esPosCtrFrm = new Point(oDesk.Width / 2, oDesk.Height / 2);
@@ -317,6 +324,7 @@ namespace nOgle {
 			
 			bool oShowSetup = true;
 			
+			// Use 'Path.Combine' here: [refactor]
 			string oqFoldSetup = Environment.GetFolderPath(Environment.SpecialFolder
 				.ApplicationData) + "\\Ogle\\";
 			sSetup = tSetup.sReadOrDef(oqFoldSetup + esqNameFileSetup);
@@ -326,8 +334,10 @@ namespace nOgle {
 			
 			sStat_Hide();
 			
-			string oqNameLast = "";
+			string oqNamePlayLast = "";
 			while (true) {
+				// Some of these blocks should be moved to subroutines. [refactor]
+
 				tqFrmOgle.tNext oNext;
 				
 				// Show setup and create round
@@ -356,9 +366,9 @@ namespace nOgle {
 				
 				// Select and search board
 				// -----------------------
-				// Board selection is occasionally slower than I would like. Future
-				// versions might run a background thread to generate and store boards
-				// for future use.
+				// Board selection is sometimes slower than it might be. Future versions 
+				// might run a background thread to generate and store boards for future 
+				// use.
 				
 				Int32 oCtWordMin = sSetup.CtWordMin().GetValueOrDefault(0);
 				Int32 oCtWordMax = sSetup.CtWordMax().GetValueOrDefault(99999);
@@ -408,35 +418,35 @@ namespace nOgle {
 				
 				Int32 oPtsPlay = oqRound.qCardPlay.Score();
 				Int32 oPtsComp = oqRound.qCardComp.Score();
-				Int32 oPer = (Int32)Math.Round((float)oPtsPlay / (float)oPtsComp
+				Int32 oPerPlay = (Int32)Math.Round((float)oPtsPlay / (float)oPtsComp
 					* 100);
 				
-				string oqName = null;
+				string oqNamePlay = null;
 				
 				if ((oPtsPlay > 0) && oqScores.CkHighPts(sSetup.Yld, sSetup.Pace,
 					oPtsPlay, oqRound.Time)) {
 					
 					sStat_Hide();
-					oqName = esName_Ask(oPtsPlay, oPtsComp, oqNameLast);
-					oqNameLast = oqName;
+					oqNamePlay = esName_Ask(oPtsPlay, oPtsComp, oqNamePlayLast);
+					oqNamePlayLast = oqNamePlay;
 					
-					var oEl = new tqScores.tEl(oqName, oPtsPlay, oqRound.Time);
+					var oEl = new tqScores.tEl(oqNamePlay, oPtsPlay, oqRound.Time);
 					oqScores.Pts_Add(sSetup.Yld, sSetup.Pace, oEl);
 				}
 				
-				if ((oPer > 0) && oqScores.CkHighPer(sSetup.Yld, sSetup.Pace, oPer,
+				if ((oPerPlay > 0) && oqScores.CkHighPer(sSetup.Yld, sSetup.Pace, oPerPlay,
 					oqRound.Time)) {
 					
-					if (oqName == null) {
+					if (oqNamePlay == null) {
 						sStat_Hide();
-						oqName = esName_Ask(oPtsPlay, oPtsComp, oqNameLast);
-						oqNameLast = oqName;
+						oqNamePlay = esName_Ask(oPtsPlay, oPtsComp, oqNamePlayLast);
+						oqNamePlayLast = oqNamePlay;
 					}
-					var oEl = new tqScores.tEl(oqName, oPer, oqRound.Time);
+					var oEl = new tqScores.tEl(oqNamePlay, oPerPlay, oqRound.Time);
 					oqScores.Per_Add(sSetup.Yld, sSetup.Pace, oEl);
 				}
 				
-				if (oqName != null) oqScores.Store(oqFoldSetup + esqNameFileScores);
+				if (oqNamePlay != null) oqScores.Store(oqFoldSetup + esqNameFileScores);
 				
 				// Show score form
 				// ---------------

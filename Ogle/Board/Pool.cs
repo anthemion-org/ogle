@@ -1,6 +1,6 @@
 // Pool.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -28,8 +28,8 @@ using nMisc;
 
 namespace nOgle {
 	/// <summary>
-	/// Represents a pool from which letters are drawn when populating the
-	/// letter grid.
+	/// Represents a pool from which letters are drawn when populating the letter
+	/// grid.
 	/// </summary>
 	/// <remarks>
 	/// Consonants, vowels, and combinations are stored in separate sub-pools to
@@ -37,9 +37,12 @@ namespace nOgle {
 	/// </remarks>
 	public class tqPool {
 		/// <summary>
-		/// The desired ratio of vowels to grid spaces. Two-fifths seems to be the
-		/// most productive ratio.
+		/// The desired ratio of vowels to grid spaces.
 		/// </summary>
+		/// <remarks>
+		/// Two-fifths seems to be the most productive ratio. More consonants might
+		/// produce more interesting words, however.
+		/// </remarks>
 		const float eRatioVow = 9F / 25F;
 		/// <summary>
 		/// The desired ratio of combinations to grid spaces.
@@ -134,7 +137,7 @@ namespace nOgle {
 		/// <summary>
 		/// Flattens the specified distribution, ensuring that no element has a
 		/// count greater than the greatest count in the pool multiplied by the
-		/// specified ceiling.
+		/// specified ceiling. Set aCeil to one to produce no flattening.
 		/// <summary>
 		void eFlat(IEnumerable<tqEl> aqEls, float aCeil) {
 			aqEls.sThrowNull("aqEls");

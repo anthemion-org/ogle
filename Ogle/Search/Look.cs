@@ -1,6 +1,6 @@
 // Look.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -21,13 +21,12 @@
 // -----------------
 
 using System;
-using System.Text;
 using nMisc;
 
 namespace nOgle {
 	/// <summary>
 	/// Stores the state of a binary search within some lexicon, allowing that
-	/// state to be extended and shared as enumerators traverse a board.
+	/// state to be extended and shared as enumerators traverse the board.
 	/// </summary>
 	public struct tLook {
 		/// <summary>

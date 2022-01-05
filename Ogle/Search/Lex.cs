@@ -1,6 +1,6 @@
 // Lex.cs
 // ------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -21,20 +21,14 @@
 // -----------------
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Drawing;
 using System.IO;
-using System.Threading;
-using nDir;
 using nMisc;
 
 namespace nOgle {
-	
+
 	/// <summary>
-	// Stores the words known to the computer.
+	/// Stores the words known to the computer.
 	/// </summary>
 	public class tqLex {
 		/// <summary>
@@ -133,8 +127,8 @@ namespace nOgle {
 		public bool Ck(string aqText) {
 			// tEl does not compare erudition levels:
 			var oEl = new tEl(aqText, 0);
-			return ((eqEls.BinarySearch(oEl) >= 0) || (eqElsUser.BinarySearch(oEl)
-				>= 0));
+			return (eqEls.BinarySearch(oEl) >= 0) 
+				|| (eqElsUser.BinarySearch(oEl) >= 0);
 		}
 		
 		/// <summary>

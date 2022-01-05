@@ -1,6 +1,6 @@
 // Pair.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -21,19 +21,16 @@
 // -----------------
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Linq;
 
 namespace nOgle {
 	/// <summary>
 	/// Represents an entry pair, associating a word with the selections made by
 	/// one or both players when entering it.
 	/// </summary>
+	/// <remarks>
+	/// Keep in mind that the players could select the same word in different 
+	/// ways.
+	/// </remarks>
 	public struct tPair: IComparable<tPair> {
 		/// <summary>
 		/// The entered word.

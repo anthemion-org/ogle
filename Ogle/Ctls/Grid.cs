@@ -1,6 +1,6 @@
 // Grid.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -22,9 +22,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
 using System.Resources;
@@ -72,7 +70,7 @@ namespace nOgle {
 	public delegate void tdHandChg(object aqSend, tqArgsChg aqArgs);
 	
 	/// <summary>
-	// Stores a letter grid selection.
+	/// Stores a letter grid selection.
 	/// </summary>
 	public class tqArgsSel: EventArgs {
 		/// <summary>

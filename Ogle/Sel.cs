@@ -1,6 +1,6 @@
 // Sel.cs
 // ------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -34,11 +34,11 @@ namespace nOgle {
 	/// </summary>
 	public class tqSel {
 		/// <summary>
-		/// The board wherein the selection is made.
+		/// The board that contains this selection.
 		/// </summary>
 		readonly tqBoard eqBoard;
 		/// <summary>
-		/// Returns the text selected by this instance.
+		/// Gets and sets the selected text.
 		/// </summary>
 		public string qText { get; private set; }
 		/// <summary>
@@ -51,10 +51,12 @@ namespace nOgle {
 		/// </summary>
 		tqNode[,] eqNodesBySq;
 		/// <summary>
-		/// The last node selected, or 'null' if no node is selected. Nodes store
-		/// references to their predecessors, so this field allows the selection
-		/// to be traversed from back to front.
+		/// The last node selected, or 'null' if there is no selection.
 		/// </summary>
+		/// <remarks>
+		/// Nodes reference their predecessors, so this field allows the selection
+		/// to be traversed from back to front.
+		/// </remarks>
 		tqNode eqNodeLast;
 		
 		/// <summary>
@@ -69,7 +71,7 @@ namespace nOgle {
 		}
 		
 		/// <summary>
-		/// Creates an instance selecting the specified squares.
+		/// Creates an instance that selects the specified squares.
 		/// </summary>
 		public tqSel(tqBoard aqBoard, IEnumerable<Point> aqSqs) {
 			aqBoard.sThrowNull("aqBoard");
@@ -101,7 +103,7 @@ namespace nOgle {
 		}
 		
 		/// <summary>
-		/// Creates an instance identical to the one specified.
+		/// Creates an instance that copies the specified selection.
 		/// </summary>
 		public tqSel(tqSel aq) {
 			aq.sThrowNull("aq");
@@ -152,10 +154,10 @@ namespace nOgle {
 		/// <summary>
 		/// Returns all selected nodes.
 		/// </summary>
-		//
-		// tqNode instances are immutable, so this method does not violate
-		// encapsulation as it might seem to do. It would be more elegant,
-		// however, to return a sequence of interfaces instead: [design]
+		/// <remarks>
+		/// tqNode instances are immutable, so this does not violate encapsulation
+		/// as it might seem to do.
+		/// </remarks>
 		public IEnumerable<tqNode> qNodes() {
 			return tqMain.sSqsGrid()
 				.Select(oq => eqNodesBySq[oq.X, oq.Y])

@@ -1,6 +1,6 @@
 // Die.cs
 // ------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -20,7 +20,6 @@
 // with Ogle. If not, see <http://www.gnu.org/licenses/>.
 // -----------------
 
-using System;
 using nDir;
 using nMisc;
 

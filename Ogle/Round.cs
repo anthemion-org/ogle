@@ -1,6 +1,6 @@
 // Round.cs
 // --------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -21,10 +21,6 @@
 // -----------------
 
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using System.Drawing;
 
 namespace nOgle {
 	/// <summary>

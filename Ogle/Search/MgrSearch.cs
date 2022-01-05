@@ -1,6 +1,6 @@
 // MgrSearch.cs
 // ------------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -25,7 +25,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Threading;
 using nMisc;
 
@@ -38,11 +37,10 @@ namespace nOgle {
 	/// If the same word appears more than once in the board, it will be
 	/// recorded more than once.
 	///
-	/// Earlier versions of the Ogle lacked the density setting, so boards were
-	/// searched while the user played, not before. Because they are now
-	/// searched in advance, the worker thread is not needed. It is retained,
-	/// however, in case future versions pre-select and cache boards in the
-	/// background.
+	/// Earlier versions lacked the density setting, so boards were searched 
+	/// while the user played, not before. Because they are now searched in 
+	/// advance, the worker thread is not needed. I have kept it in case future 
+	/// versions pre-select and cache boards in the background.
 	/// </remarks>
 	public class tqMgrSearch: IEnumerable<tqSel> {
 		/// <summary>

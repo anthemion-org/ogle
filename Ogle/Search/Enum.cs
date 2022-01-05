@@ -1,6 +1,6 @@
 // Enum.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -29,12 +29,13 @@ using nMisc;
 namespace nOgle {
 	/// <summary>
 	/// Represents a square within a die sequence, and produces additional
-	/// instances allowing the client to enumerate sequences depending from that
+	/// instances allowing the client to enumerate sequences following that
 	/// square.
-	///
+	/// </summary>
+	/// <remarks>
 	/// New enumerations are started with <see cref="tqEnum(tqBoard, Point)"/>.
 	/// They are continued with <see cref="tqEnum.Next"/>.
-	/// </summary>
+	/// </remarks>
 	public class tqEnum {
 		// Many instances are allocated as the board is enumerated. It would be
 		// faster to make instances reusable, and allocate them within a fixed

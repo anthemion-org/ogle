@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Resources;
 
@@ -11,7 +10,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jeremy Kelly")]
 [assembly: AssemblyProduct("Ogle")]
-[assembly: AssemblyCopyright("©2011 Jeremy Kelly")]
+[assembly: AssemblyCopyright("©2022 Jeremy Kelly")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

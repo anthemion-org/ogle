@@ -1,6 +1,6 @@
 // Text.cs
 // -------
-// Copyright ©2011 Jeremy Kelly
+// Copyright ©2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -21,8 +21,6 @@
 // -----------------
 
 using System;
-using System.Drawing;
-using System.Collections.Generic;
 
 namespace nText {
 	/// <summary>
