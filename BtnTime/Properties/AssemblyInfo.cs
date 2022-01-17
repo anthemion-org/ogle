@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("BtnTime")]
-[assembly: AssemblyCopyright("Copyright ©2010")]
+[assembly: AssemblyCopyright("Copyright ©2007-2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

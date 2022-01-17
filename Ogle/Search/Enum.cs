@@ -1,6 +1,6 @@
 // Enum.cs
 // -------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -69,7 +69,7 @@ namespace nOgle {
 		readonly tqEnum eqPrev;
 		
 		/// <summary>
-		/// The index of the following die to be covered by the next call to Next.
+		/// The index of the die to be covered by the next call to Next.
 		/// </summary>
 		Int32 eIdxNext;
 		
@@ -82,7 +82,8 @@ namespace nOgle {
 		/// <summary>
 		/// Creates a top-level instance with no predecessors.
 		/// </summary>
-		public tqEnum(tqBoard aqBoard, Point aSq): this(aqBoard, aSq, null) {
+		public tqEnum(tqBoard aqBoard, Point aSq): 
+			this(aqBoard, aSq, null) {
 		}
 		
 		/// <summary>

@@ -10,7 +10,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jeremy Kelly")]
 [assembly: AssemblyProduct("Ogle")]
-[assembly: AssemblyCopyright("©2022 Jeremy Kelly")]
+[assembly: AssemblyCopyright("©2007-2022 Jeremy Kelly")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

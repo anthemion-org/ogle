@@ -91,7 +91,7 @@ namespace nOgle {
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(240, 20);
 			this.label4.TabIndex = 7;
-			this.label4.Text = "Copyright ©2022 Jeremy Kelly";
+			this.label4.Text = "Copyright ©2007-2022 Jeremy Kelly";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label5
@@ -197,7 +197,7 @@ namespace nOgle {
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(240, 20);
 			this.label2.TabIndex = 17;
-			this.label2.Text = "Copyright 2000-2004 Kevin Atkinson\r\n";
+			this.label2.Text = "Copyright ©2000-2004 Kevin Atkinson\r\n";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// eqLblInno

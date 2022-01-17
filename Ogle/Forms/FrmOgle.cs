@@ -1,6 +1,6 @@
 // FrmOgle.cs
 // ----------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -58,6 +58,7 @@ namespace nOgle {
 			
 			if (aqFileHelp.Length > 0) {
 				string oqFold = Path.GetDirectoryName(Application.ExecutablePath);
+			// Use 'Path.Join' or 'Path.Combine' here: [refactor]
 				eqPathHelp = oqFold + "\\Help\\" + aqFileHelp;
 			}
 			KeyPreview = true;

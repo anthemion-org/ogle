@@ -1,6 +1,6 @@
 // Board.cs
 // --------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -48,8 +48,8 @@ namespace nOgle {
 		/// </param>
 		public tqBoard(float aCeilPool) {
 			tqPool oqPool = new tqPool(aCeilPool);
-			for (Int32 oX = 0; oX < tqMain.sWthGrid; ++oX)
-				for (Int32 oY = 0; oY < tqMain.sHgtGrid; ++oY)
+			for (int oX = 0; oX < tqMain.sWthGrid; ++oX)
+				for (int oY = 0; oY < tqMain.sHgtGrid; ++oY)
 					eqDice[oX, oY] = oqPool.Die();
 		}
 	}

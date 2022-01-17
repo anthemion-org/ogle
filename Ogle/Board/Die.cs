@@ -1,6 +1,6 @@
 // Die.cs
 // ------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------

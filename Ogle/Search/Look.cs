@@ -1,6 +1,6 @@
 // Look.cs
 // -------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -47,11 +47,11 @@ namespace nOgle {
 		/// <summary>
 		/// The last lexicon index before the search window.
 		/// </summary>
-		Int32 eTop;
+		Int32 ejFore;
 		/// <summary>
 		/// The first lexicon index after the search window.
 		/// </summary>
-		Int32 eBtm;
+		Int32 ejAft;
 		
 		/// <summary>
 		/// Creates a new instance without borrowing search state from another
@@ -75,14 +75,14 @@ namespace nOgle {
 			eqText = aqText;
 			eErud = aErud;
 			
-			eTop = -1;
-			eBtm = eqLex.Ct();
+			ejFore = -1;
+			ejAft = eqLex.Ct();
 		}
 		
 		/// <summary>
-		/// Creates a new instance that borrows search state the specified
-		/// instance. This allows many slices to be skipped as the die sequence
-		/// grows.
+		/// Creates a new instance that borrows search state from the specified
+		/// instance. This allows many binary search interations to be skipped as
+		/// the die sequence grows.
 		/// </summary>
 		/// <param name="aqLex">
 		/// The lexicon to be searched.
@@ -100,8 +100,8 @@ namespace nOgle {
 			eErud = aLast.eErud;
 			eqText = aqText;
 			
-			eTop = aLast.eTop;
-			eBtm = aLast.eBtm;
+			ejFore = aLast.ejFore;
+			ejAft = aLast.ejAft;
 		}
 		
 		/// <summary>
@@ -137,7 +137,7 @@ namespace nOgle {
 			if (eqLex.Ct() < 1) return tOut.Miss;
 			
 			while (true) {
-				Int32 oMid = (eTop + eBtm) / 2;
+				Int32 oMid = (ejFore + ejAft) / 2;
 				tqLex.tEl oEl = eqLex[oMid];
 				
 				Int32 oComp = eComp(oEl.qText);
@@ -149,17 +149,17 @@ namespace nOgle {
 					if (aStopFrag) return tOut.Frag;
 					// oEl begins with but is longer than eqText, so the match, if any,
 					// must precede oMid:
-					eBtm = oMid;
+					ejAft = oMid;
 				}
 				// oEl sorts after eqText:
-				else if (oComp < 0) eBtm = oMid;
+				else if (oComp < 0) ejAft = oMid;
 				// oEl sorts before eqText:
-				else eTop = oMid;
+				else ejFore = oMid;
 				
 				// The word in the middle of the window has just been checked. If the
 				// window contracts in size to one word or less, no match is left to
 				// be found:
-				if ((eBtm - eTop) <= 1) return tOut.Miss;
+				if ((ejAft - ejFore) <= 1) return tOut.Miss;
 			}
 		}
 		

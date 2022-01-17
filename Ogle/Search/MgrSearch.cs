@@ -1,6 +1,6 @@
 // MgrSearch.cs
 // ------------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -137,10 +137,10 @@ namespace nOgle {
 						var oqEnum = new tqEnum(eqBoard, oSq);
 						var oLook = new tLook(eqLex, eErud, oqEnum.qTextSel);
 						// At this point, the board enumeration contains only one die, so
-						// it cannot generate a valid entry. Lookup instances borrow
-						// search window values from their predecessors, however, so
-						// starting the search here will save a few slices as this part of
-						// the board is enumerated:
+						// it cannot generate a valid entry. Lookup instances borrow search
+						// window values from their predecessors, however, so starting the 
+						// search here will save a few binary search iterations as this 
+						// part of the board is enumerated:
 						oLook.Exec(true);
 						eExec(oqEnum, oLook);
 					}

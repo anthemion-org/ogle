@@ -1,6 +1,6 @@
 // Main.cs
 // -------
-// Copyright ©2022 Jeremy Kelly
+// Copyright ©2007-2022 Jeremy Kelly
 // Distributed under the terms of the GNU General Public License
 // www.anthemion.org
 // -----------------
@@ -324,7 +324,7 @@ namespace nOgle {
 			
 			bool oShowSetup = true;
 			
-			// Use 'Path.Combine' here: [refactor]
+			// Use 'Path.Join' or 'Path.Combine' here: [refactor]
 			string oqFoldSetup = Environment.GetFolderPath(Environment.SpecialFolder
 				.ApplicationData) + "\\Ogle\\";
 			sSetup = tSetup.sReadOrDef(oqFoldSetup + esqNameFileSetup);

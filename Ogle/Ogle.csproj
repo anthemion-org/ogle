@@ -283,6 +283,7 @@
     <Compile Include="Sel.cs" />
     <Compile Include="SetupAdv.cs" />
     <Compile Include="Lib\Text.cs" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ogle.ico" />
