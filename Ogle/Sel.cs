@@ -146,7 +146,7 @@ namespace nOgle {
 		/// <summary>
 		/// Returns the score awarded for the entry.
 		/// </summary>
-		public Int32 Score(bool aPlay) {
+		public Int32 Score() {
 			if (St == tSt.Valid) return 1;
 			return 0;
 		}

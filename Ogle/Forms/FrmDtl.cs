@@ -69,7 +69,7 @@ namespace nOgle {
 			
 			if (aqSel == null) aqLbl.Text = "0";
 			else {
-				string oqText = aqSel.Score(aPlay).ToString();
+				string oqText = aqSel.Score().ToString();
 				aqLbl.Text = oqText;
 				if (oqText == "1") aqLblLeg.Text = "Point";
 			}

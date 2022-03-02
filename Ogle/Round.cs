@@ -77,8 +77,8 @@ namespace nOgle {
 		public tqRound(float aCeilPool) {
 			eTime = DateTime.Now;
 			eqBoard = new tqBoard(aCeilPool);
-			eqCardPlay = new tqCard(true);
-			eqCardComp = new tqCard(false);
+			eqCardPlay = new tqCard();
+			eqCardComp = new tqCard();
 		}
 	}
 }

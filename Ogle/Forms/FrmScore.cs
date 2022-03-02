@@ -310,14 +310,14 @@ namespace nOgle {
 				const Int32 oPadScore = 4;
 				
 				if (aPair.qSelPlay != null) {
-					oqText = aPair.qSelPlay.Score(true).ToString();
+					oqText = aPair.qSelPlay.Score().ToString();
 					oSizeText = aqGr.MeasureString(oqText, eqFontVal);
 					oPt = new Point(eRectCli.Left + oPadScore, aTop + eTopText);
 					aqGr.DrawString(oqText, eqFontVal, eqBrVal, oPt);
 				}
 				
 				if (aPair.qSelComp != null) {
-					oqText = aPair.qSelComp.Score(false).ToString();
+					oqText = aPair.qSelComp.Score().ToString();
 					oSizeText = aqGr.MeasureString(oqText, eqFontVal);
 					oPt = new Point(eRectCli.Right - oPadScore - (Int32)oSizeText.Width,
 						aTop + eTopText);

@@ -8,8 +8,6 @@ Ogle is a free, open source word-finding game for Windows:
 
 I created this app when I was first learning C#. Ogle derives from a tabletop game you've probably played, but the pace is _much_ faster. I am working on a web version right now; check back later for that.
 
-To learn more about the game, have a look at the Ogle [help pages](https://www.anthemion.org/ogle_help/index.html).
-
 
 ## Ogle solution
 

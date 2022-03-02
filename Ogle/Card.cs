@@ -32,10 +32,6 @@ namespace nOgle {
 	/// </summary>
 	public class tqCard: IEnumerable<tqSel> {
 		/// <summary>
-		/// Set to 'true' if this card belongs to the player.
-		/// </summary>
-		readonly bool ePlay;
-		/// <summary>
 		/// All entries made by the card's owner, whether valid or not.
 		/// </summary>
 		readonly List<tqSel> eqSels;
@@ -48,11 +44,7 @@ namespace nOgle {
 		/// </summary>
 		Int32 eScore;
 		
-		/// <param name="aPlay">
-		/// Set to 'true' if this card belongs to the player.
-		/// </param>
-		public tqCard(bool aPlay) {
-			ePlay = aPlay;
+		public tqCard() {
 			eqSels = new List<tqSel>();
 			eCtVal = 0;
 			eScore = 0;
@@ -119,7 +111,7 @@ namespace nOgle {
 			if (oMatch) eScore_Upd();
 			else {
 				++eCtVal;
-				eScore += aq.Score(ePlay);
+				eScore += aq.Score();
 				oCtAdd = aq.qText.Length;
 			}
 			
@@ -133,7 +125,7 @@ namespace nOgle {
 			eScore = 0;
 			foreach (tqSel oq in eqSels) {
 				oq.sThrowNull("oq");
-				eScore += oq.Score(ePlay);
+				eScore += oq.Score();
 			}
 		}
 		
