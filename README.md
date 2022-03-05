@@ -1,17 +1,20 @@
 # Ogle: Word-finding game for Windows
 
+This project is no longer being developed. I have created a new and mostly better version that is playable [on the web](https://www.anthemion.org/play-ogle/)! You can see that project [here](https://github.com/anthemion-org/ogle-web).
+
+
 ## Overview
 
 Ogle is a free, open source word-finding game for Windows:
 
 ![Ogle screenshots](screens_ogle.png)
 
-I created this app when I was first learning C#. Ogle derives from a tabletop game you've probably played, but the pace is _much_ faster. I am working on a web version right now; check back later for that.
+I created this app in 2006, when I was first learning C#. Ogle derives from a tabletop game you've probably played, but the pace is _much_ faster.
 
 
 ## Ogle solution
 
-Ogle was originally created with C# 3.0, .NET Framework 3.5, and Visual Studio 2005. I have updated the solution to use Visual Studio 2019 and .NET Framework 4.5, but the code hasn't changed much since 2006.
+Ogle was originally created with C# 3.0, .NET Framework 3.5, and Visual Studio 2005. I have updated the solution to use Visual Studio 2019 and .NET Framework 4.5, but the code hasn't changed much since I first wrote it.
 
 The Ogle solution contains three projects:
 
@@ -70,7 +73,7 @@ The Ogle installer project is at `Ogle/Install/Ogle.iss`. You will see that the 
 
 ## License
 
-Ogle has copyright ©2011 Jeremy Kelly. Its use and distribution are subject to the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Ogle has copyright ©2006-2022 Jeremy Kelly. Its use and distribution are subject to the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 The Ogle word lists derive from SCOWL, copyright ©2000-2004 Kevin Atkinson. Use and distribution of SCOWL are subject to the terms of the SCOWL License:
 
