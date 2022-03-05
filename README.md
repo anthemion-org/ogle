@@ -1,6 +1,6 @@
 # Ogle: Word-finding game for Windows
 
-This project is no longer being developed. I have created a new and mostly better version that is playable [on the web](https://www.anthemion.org/play-ogle/)! You can see that project [here](https://github.com/anthemion-org/ogle-web).
+_This project is no longer being developed. I have created a new and mostly better version that is playable [on the web](https://www.anthemion.org/play-ogle/)! You can view that project [here](https://github.com/anthemion-org/ogle-web)._
 
 
 ## Overview
@@ -18,11 +18,11 @@ Ogle was originally created with C# 3.0, .NET Framework 3.5, and Visual Studio 2
 
 The Ogle solution contains three projects:
 
-* `BtnTime`: Implements the 'timer' button used on the Play form.
+* `BtnTime` implements the 'timer' button used on the Play form.
 
-* `Line`: Implements the 'line' control used in several places on the Score form.
+* `Line` implements the 'line' control used in several places on the Score form.
 
-* `Ogle`: The main Ogle application.
+* `Ogle` is the main Ogle application.
 
 The Ogle project references the `Release` versions of `BtnTime` and `Line`, so you should build that target _before_ `Debug`.
 
